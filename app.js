@@ -1,6 +1,11 @@
 //Convert Pounds
 document.getElementById('lbsInput').addEventListener('input', (e) => {
+    //clear input boxes
+document.getElementById('gramsInput').value="";
+document.getElementById('kgInput').value="";
+document.getElementById('ozInput').value="";
 
+//convert 
     let lbs = e.target.value;
     document.getElementById('poundsOutput').innerHTML = lbs * 1;
 
@@ -13,7 +18,13 @@ document.getElementById('lbsInput').addEventListener('input', (e) => {
 
 //Convert grams
 document.getElementById('gramsInput').addEventListener('input', (e) => {
+    //clear input boxes
+    document.getElementById('lbsInput').value="";
+    document.getElementById('kgInput').value="";
+    document.getElementById('ozInput').value="";
 
+
+    //convert
     let lbs = e.target.value;
     document.getElementById('gramsOutput').innerHTML = lbs * 1;
 
@@ -23,9 +34,16 @@ document.getElementById('gramsInput').addEventListener('input', (e) => {
 
     document.getElementById('ozOutput').innerHTML = lbs / 28.35;
 });
+
+
 //convert kilograms
 document.getElementById('kgInput').addEventListener('input', (e) => {
+//clear input boxes
+document.getElementById('lbsInput').value="";
+document.getElementById('ozInput').value="";
+document.getElementById('gramsInput').value="";
 
+//convert
     let lbs = e.target.value;
     document.getElementById('kgOutput').innerHTML = lbs * 1;
 
@@ -34,10 +52,18 @@ document.getElementById('kgInput').addEventListener('input', (e) => {
     document.getElementById('poundsOutput').innerHTML = lbs * 2.2046;
 
     document.getElementById('ozOutput').innerHTML = lbs * 35.274;
+
+
 });
 
 //convert oz
 document.getElementById('ozInput').addEventListener('input', (e) => {
+    //clear input boxes
+    document.getElementById('lbsInput').value="";
+    document.getElementById('kgInput').value="";
+    document.getElementById('gramsInput').value="";
+
+    //convert
 
     let lbs = e.target.value;
     document.getElementById('ozOutput').innerHTML = lbs * 1;
